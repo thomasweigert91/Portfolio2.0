@@ -1,0 +1,32 @@
+.hero {
+    overflow: hidden;
+}
+
+.hero img {
+    max-width: 400px;
+}
+
+.hero .text {
+    margin-top: 1rem;
+}
+
+.skills {
+    margin: 1.5rem 0 2.5rem 0;
+}
+
+.skill {
+    margin: 1rem 0;
+
+}
+.skill-title {
+    font-weight: 600;
+    color: var(--dark-one);
+    margin-bottom: 0.3rem;
+}
+
+.skill-bar {
+    height: 8px;
+    width: 70%;
+    border-radius: 4px;
+    background-color: var(--main-color) ;
+}

@@ -1,0 +1,143 @@
+.section-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    display: inline-block;
+    padding: 2rem;
+    line-height: 1.5;
+    font-size: 2.8rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.title:before {
+    content: attr(data-title);
+    display: block;
+    margin: 0.4rem;
+    color: var(--main-color);
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.title:after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: var(--main-color);
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+
+.section-header .text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 90px;
+    margin-bottom: 1.7rem;
+}
+
+.card {
+    width: 100%;
+    position: relative;
+    max-width: 390px;
+    min-height: 520px;
+    background-color: var(--light-three);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 2rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:before{
+    content: attr(data-card);
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    font-size: 6rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--main-color);
+    opacity: 0.025;
+}
+
+
+.card:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main-color);
+    transition: 0.3s;
+    height: 0;
+}
+
+.card-wrap:hover .card:after {
+    height: 8px;
+}
+
+
+.card-wrap:hover {
+transform: translateY(-8px);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.card-wrap {
+
+    margin: 1.7rem 0,8rem;
+    transition: 0.3s;
+    position: relative;
+}
+
+.points-sq {
+    width: 210px;
+}
+
+.card .title-sm {
+    line-height: 0.8;
+
+}
+
+.card .text {
+    font-size: 1.15rem;
+    margin: 1.5rem 0;
+}
+
+.btn .small {
+    padding: 0.7rem 1.8rem;
+    font-size: 1rem;
+}
+
+.services .points1 {
+    bottom: -50px;
+    left: -125px;
+    opacity: 0.3;
+}
+
+.services .points2 {
+    bottom: -50px;
+    right: -125px;
+    opacity: 0.3;
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Portfolio Website</title>
+</head>
+<body>
+  <main>
+    <header>
+        <div class="overlay overlay-lg">
+            <img src="./img/pngegg.png" class="points points1" alt="Background Shapes">
+        </div>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>ThomasWeigert</h1>
+                </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" class="active">Contact me</a></li>
+                </ul>
+            </div>    
+            </div>
+        </nav>
+        <section class="header-content">
+            <div class="container grid-2">
+                <div class="column-1">
+                    <h1 class="header-title">Thomas Weigert</h1>
+                    <p class="text">Hi there, I'm Thomas Weigert, web designer and developer. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, itaque suscipit! Vel, qui cupiditate accusantium facilis aliquid nihil doloremque adipisci deleniti neque deserunt temporibus quos, molestiae perferendis sequi aperiam soluta.</p>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+                <div class="column-2 image">
+                    <img src="./img/pngegg.png" class="points points2" alt="">
+                    <img src="./img/pngegg.png" class="points points3" alt="">
+                    <img src="./img/eugene-golovesov--fi8WwiQZ_E-unsplash.jpg" alt="Personal Image" class="img-element z-index">
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="services section">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="title" data-title="What I do">Services</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, unde?
+                </p>
+            </div>
+            <div class="cards">
+                <div class="card-wrap">
+                    <img src="./img/pngegg.png" class="points points1 points-sq" alt="Background Shapes">
+                    <div class="card" data-card="UX / UI">
+                        <div class="card-content">
+                            <img src="./img/web-design.png" alt="" class="icon">
+                            <h3 class="title-sm">Web Design</h3>
+                            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure ab labore ratione.</p>
+                            <a href="#" class="btn small">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap">
+                    <div class="card" data-card="Code">
+                        <div class="card-content">
+                            <img src="./img/web development.png" alt="" class="icon">
+                            <h3 class="title-sm">Web Development</h3>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim doloremque repellendus optio.</p>
+                            <a href="#" class="btn small">Read more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-wrap">
+                    <img src="./img/pngegg.png" class="points points2 points-sq" alt="Background Shapes">
+                    <div class="card" data-card="App">
+                        <div class="card-content">
+                            <img src="./img/app-entwicklung.png" alt="" class="icon">
+                            <h3 class="title-sm">App Development</h3>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quod doloribus! Aperiam!</p>
+                            <a href="#" class="btn small">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio section">
+        <div class="background-bg"></div>
+        <div class="container">
+            <div class="section-header"><h3 class="title" data-title="My works">Portfolio</h3></div>
+            <div class="section-body">
+                <div class="filter">
+                    <button class="filter-btn active" data-filter="*">All</button>
+                    <button class="filter-btn" data-filter=".uiux">UI/UX</button>
+                    <button class="filter-btn" data-filter=".webdev">Web Dev</button>
+                    <button class="filter-btn" data-filter=".appdev">Mobile App</button>
+                </div>
+                <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
+                    <div class="grid-item uiux">
+                        <div class="gallery-image">
+                        <img src="img/pexels-ylanite-koppens-5579177.jpg" alt="my work">
+                        <div class="img-overlay">
+                            <div class="plus"></div>
+                            <div class="img-description">
+                                <h3>UI/UX</h3>
+                                <h5>View Demo</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="grid-item appdev">
+                        <div class="gallery-image">
+                        <img src="img/pexels-ylanite-koppens-5579177.jpg" alt="my work">
+                        <div class="img-overlay">
+                            <div class="plus"></div>
+                            <div class="img-description">
+                                <h3>App Dev</h3>
+                                <h5>View Demo</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="grid-item webdev">
+                        <div class="gallery-image">
+                        <img src="img/pexels-ylanite-koppens-5579177.jpg" alt="my work">
+                        <div class="img-overlay">
+                            <div class="plus"></div>
+                            <div class="img-description">
+                                <h3>Web Dev</h3>
+                                <h5>View Demo</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="grid-item uiux">
+                        <div class="gallery-image">
+                        <img src="img/pexels-ylanite-koppens-5579177.jpg" alt="my work">
+                        <div class="img-overlay">
+                            <div class="plus"></div>
+                            <div class="img-description">
+                                <h3>UI/UX</h3>
+                                <h5>View Demo</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="grid-item webdev">
+                        <div class="gallery-image">
+                        <img src="img/pexels-ylanite-koppens-5579177.jpg" alt="my work">
+                        <div class="img-overlay">
+                            <div class="plus"></div>
+                            <div class="img-description">
+                                <h3>Web Dev</h3>
+                                <h5>View Demo</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="grid-item uiux">
+                        <div class="gallery-image">
+                        <img src="img/pexels-ylanite-koppens-5579177.jpg" alt="my work">
+                        <div class="img-overlay">
+                            <div class="plus"></div>
+                            <div class="img-description">
+                                <h3>UI/UX</h3>
+                                <h5>View Demo</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="grid-item appdev">
+                        <div class="gallery-image">
+                        <img src="img/pexels-ylanite-koppens-5579177.jpg" alt="my work">
+                        <div class="img-overlay">
+                            <div class="plus"></div>
+                            <div class="img-description">
+                                <h3>App Dev</h3>
+                                <h5>View Demo</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="grid-item webdev">
+                        <div class="gallery-image">
+                        <img src="img/pexels-ylanite-koppens-5579177.jpg" alt="my work">
+                        <div class="img-overlay">
+                            <div class="plus"></div>
+                            <div class="img-description">
+                                <h3>Web Dev</h3>
+                                <h5>View Demo</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="grid-item webdev">
+                        <div class="gallery-image">
+                        <img src="img/pexels-ylanite-koppens-5579177.jpg" alt="my work">
+                        <div class="img-overlay">
+                            <div class="plus"></div>
+                            <div class="img-description">
+                                <h3>Web Dev</h3>
+                                <h5>View Demo</h5>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero section">
+        <div class="container">
+            <div class="section-header">
+                <h3 class="title" data-title="Who am I">About me</h3>
+            </div>
+            <div class="section-body grid-2">
+                <div class="column1">
+                    <h3 class="title-sm">Hello, I am</h3>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, consequuntur cumque deleniti quisquam distinctio corporis.</p>
+                </div>
+                <div class="skills">
+                    <div class="skill html">
+                        <h3 class="skill-title">HTML</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <div class="skill css">
+                        <h3 class="skill-title">CSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div> 
+                    <div class="skill js">
+                        <h3 class="skill-title">JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Read more</a>  
+                </div>
+                <div class="column2 image">
+                    <img src="img/eugene-golovesov--fi8WwiQZ_E-unsplash.jpg" alt="Portrait">
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+  <footer>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/isotope.pkgd.min.js""></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
